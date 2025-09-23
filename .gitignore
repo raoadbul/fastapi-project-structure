@@ -1,0 +1,31 @@
+# Environment variables
+.env
+.env.*
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Media/uploads
+media/
+media/*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Django / Python migrations
+migrations/
+*/migrations/
+
+# Project config
+pyproject.toml
+
+# Other common ignores
+*.sqlite3
+.DS_Store
+.idea/
+.vscode/
