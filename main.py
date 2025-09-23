@@ -1,3 +1,4 @@
+from controllers import user_controller
 from dotenv import load_dotenv
 load_dotenv()
 from fastapi.middleware.cors import CORSMiddleware
@@ -19,3 +20,5 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.mount("/media", StaticFiles(directory="media"), name="media")
+
+app.include_router(user_controller.router, prefix="/api", tags=['User'])
